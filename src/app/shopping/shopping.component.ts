@@ -7,7 +7,8 @@ import {Ingredient} from '../shared/ingredient';
   styleUrls: ['./shopping.component.css']
 })
 export class ShoppingComponent implements OnInit {
-  ingredients: Ingredient[] = [];
+  ingredients: Ingredient[] = [new Ingredient('minced meat', 1),
+    new Ingredient('onions', 2)];
 
   constructor() {
   }
