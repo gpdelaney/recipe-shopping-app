@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   collapsed = true;
+  @Output() whereTo = new EventEmitter<string>();
 
   constructor() {
   }
@@ -14,4 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  whereToGo(destination: string) {
+    this.whereTo.emit(destination);
+  }
 }

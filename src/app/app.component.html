@@ -1,9 +1,9 @@
 <div class="container">
-  <app-header></app-header>
+  <app-header (whereTo)="whereToGo($event)"></app-header>
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping></app-shopping>
+      <app-recipes *ngIf="destination === 'recipes'"></app-recipes>
+      <app-shopping *ngIf="destination === 'shopping'"></app-shopping>
     </div>
   </div>
 </div>
