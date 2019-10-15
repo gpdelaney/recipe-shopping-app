@@ -10,10 +10,15 @@ export class ShoppingComponent implements OnInit {
   ingredients: Ingredient[] = [new Ingredient('minced meat', 1),
     new Ingredient('onions', 2)];
 
+
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  addIngredientToArray(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
   }
 
 }
