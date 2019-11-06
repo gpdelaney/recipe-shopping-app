@@ -1,6 +1,9 @@
+
+
+
 # RecipeProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3. this project was made for the udemy course for angular8(https://www.udemy.com/course/the-complete-guide-to-angular-2/). It's a recipe and shopping app very basic that evolves from simple event binding to the use of service and custom directives. 
 
 ## Development server
 
