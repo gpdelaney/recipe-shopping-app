@@ -13,7 +13,7 @@
         <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe<span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li><a (click)="sendToShoppingList(recipe.ingredients)" style="cursor: pointer ">Shopping List</a></li>
-          <li><a style="cursor: pointer ">Edit Recipe</a></li>
+          <li><a [routerLink]="['edit']">Edit Recipe</a></li>
           <li><a style="cursor: pointer ">Remove Recipe</a></li>
         </ul>
       </div>
