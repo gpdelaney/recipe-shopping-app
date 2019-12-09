@@ -1,4 +1,4 @@
-import {EventEmitter, Injectable, Output} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Recipe} from './recipe.model';
 import {Ingredient} from '../shared/ingredient';
 
@@ -13,7 +13,6 @@ export class RecipeService {
     'https://d2p4qauh5fa1j0.cloudfront.net/fotos/recetas/ampliacion/guiso_mlHzbf0x36N15kJwcY9tGUOayKXp4B.jpg',
     [new Ingredient('meat', 1), new Ingredient('lentil', 2),
       new Ingredient('chorizo', 1)])];
-  @Output() recipeSelected = new EventEmitter<Recipe>();
 
   constructor() {
   }
