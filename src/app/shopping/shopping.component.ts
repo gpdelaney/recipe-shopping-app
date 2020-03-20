@@ -22,9 +22,6 @@ export class ShoppingComponent implements OnInit, OnDestroy {
       this.ingredients = ingredientsList;
     });
   }
-  addIngredientToArray(ingredient: Ingredient) {
-    this.shoppingService.addIngredient(ingredient);
-  }
   // Good practice to always unsubscribe after the fact.
   ngOnDestroy(): void {
     this.changeSubscription.unsubscribe();

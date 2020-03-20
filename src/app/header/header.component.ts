@@ -6,16 +6,10 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  collapsed = true;
-  @Output() whereTo = new EventEmitter<string>();
 
   constructor() {
   }
 
   ngOnInit() {
-  }
-
-  whereToGo(destination: string) {
-    this.whereTo.emit(destination);
   }
 }
